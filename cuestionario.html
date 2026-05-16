@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cuestionario.css">
+    <title>CostEstimater</title>
+</head>
+
+<body>
+    <header class="Title">
+        <h1><i class="fa-solid fa-chart-line"></i> CostEstimater</h1>
+            <nav class="Menu">
+                <ul>
+                    <li class="Inicio"><a href="./login.html">Inicio</a></li>
+                    <li class="Acerca"><a href="#">Acerca De</a></li>
+                    <li class="Contacto"><a href="#">Contacto</a></li>
+                    <li class="Sesion"><a href="#">Iniciar Sesion</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <div class="Formulario">
+
+            <h2 class="step-title">
+                Paso 1 de 4: Selección de Plataforma
+            </h2>
+
+            <div class="progress-container">
+
+                <div class="progress"></div>
+
+                    <div class="circle active"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+
+                </div>
+                <section class="Options-progress">
+                    <h2 class="Texto-opciones">¿Que Plataforma Necesitas?</h2>
+
+                    <input type="checkbox" name="plataforma" id="op1" class="card-radio">
+                    <input type="checkbox" name="plataforma" id="op2" class="card-radio">
+                    <input type="checkbox" name="plataforma" id="op3" class="card-radio">
+                    <div class="msg-contenedor">
+                        <p class="msg msg-op1"><i class="fa-solid fa-check"></i> Seleccionado: IOS</p>
+                        <p class="msg msg-op2"><i class="fa-solid fa-check"></i> Seleccionado: Android</p>
+                        <p class="msg msg-op3"><i class="fa-solid fa-check"></i> Seleccionado: Web</p>
+                    </div>
+                        
+                    <div class="Options-container">
+                        <input type="checkbox" name="plataforma" id="op1" class="card-radio">
+                        <label for="op1" class="option-item1">
+                            <div class="icon"><img src="./ios_logo.png" alt="IOS-logo"></div>
+                            <p><strong>IOS</strong><br>
+                            APlicaciones Para Iphone y Ipad.</p>
+                        </label>
+
+                        <input type="checkbox" name="plataforma" id="op2" class="card-radio">
+                        <label for="op2" class="option-item2">
+                            <div class="icon"><img src="./icons8-android-os-500.png" alt=""></div>
+                            <p><strong>Android</strong><br>
+                            APlicaciones Para Dispositivos Android</p>
+                        </label>
+
+                        <input type="checkbox" name="plataforma" id="op3" class="card-radio">
+                        <label for="op3" class="option-item3">
+                            <div class="icon"><img src="./sitio-web.png" alt=""></div>
+                            <p><strong>Transparencia Total:</strong><br>
+                            Sin costos ocultos, desglose detallado.</p>
+                        </label>
+                    </div>
+                </section>
+                    <div class="Opciones-items">
+                        <div class="button-Anterior">
+                            <p><strong><a href="./login.html">Anterior</a></strong><br></p>
+                        </div>
+                        <div class="button-Continuar">
+                            <p><strong><a href="./Costos.html">Continuar</a></strong><br></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+    </main>
+    <script src="https://kit.fontawesome.com/151970cc4d.js" crossorigin="anonymous"></script>
+</body>
+</html>
