@@ -1,6 +1,6 @@
 # CostEstimater 📈
 
-**CostEstimater** (también referenciado como *CostoDev App*) es una aplicación web interactiva y responsiva diseñada para que emprendedores, empresas y desarrolladores puedan estimar de forma instantánea, precisa y transparente el costo de sus proyectos de software mediante flujos interactivos.
+**CostEstimater** (también referenciado como *CostoDev App*) es una aplicación web interactiva y responsiva diseñada por Eidan Cuadros,  para que emprendedores, empresas y desarrolladores puedan estimar de forma instantánea, precisa y transparente el costo de sus proyectos de software mediante flujos interactivos.
 
 La plataforma guía al usuario a través de un ecosistema visual por pasos (cuestionario de requerimientos, desglose financiero por fases y sección de contacto/recursos) para ofrecer presupuestos simulados detallados que ayudan a impulsar el desarrollo digital.
 
