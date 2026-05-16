@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--gradient-header);
+    background-attachment: fixed;
+    font-family: sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    animation: fadeUp 0.6s ease 0.2s both;
+}
+
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.msg {
+    display: none;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    color: #fd7e14;
+    background: #fff3e0;
+    border: 2px solid #ffc107;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: fit-content;
+}
+
+.msg-contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    min-height: 45px;
+    padding-bottom: 30px;
+}
+
+#op1:checked ~ .msg-contenedor .msg-op1,
+#op2:checked ~ .msg-contenedor .msg-op2,
+#op3:checked ~ .msg-contenedor .msg-op3 {
+    display: block;
+}
+
+.Title{
+    font-family: 'Orbitron', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 100%;
+    font-size: 20px;
+    z-index: 1000px;
+    backdrop-filter: blur(14px);
+    box-shadow: 0 10px 20px rgba(215, 215, 215, 0.2);
+}
+.Title h1{
+    padding-left: 30px;
+}
+
+.Menu ul{ 
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+    flex-direction: row;
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+
+.Menu a {
+    text-decoration: none;
+    justify-content: space-between;
+    color: var(--text-main);
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.Sesion:hover,
+.Contacto:hover,
+.Acerca:hover,
+.Menu .Inicio:hover{
+    transform: translateY(-2px);
+    color: white;
+    border-radius: 10px;
+}
+
+.Menu a:hover{
+    background: linear-gradient(90deg, #ffc107, #fd7e14);
+    border-radius: 20px;
+}
+
+.icon img{
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.Opciones-items{
+    display: flex;
+    width: 100%;
+    padding-top: 40px;
+    text-align: center;
+    gap: 80px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    z-index: 1100px;
+}
+
+.Opciones-items a {
+    font-family: 'Orbitron', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(90deg, #ffc107, #fd7e14);
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border: none;
+    width: 25%;
+    border-radius: 15px;
+    padding: 15px 120px;
+}
+
+
+
+.button-Continuar:hover, .button-Anterior:hover, a:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    border-radius: 50px;
+}
+
+
+.Formulario{
+    margin: 80px;
+    height: 820px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: left;
+    background: rgb(234, 234, 234);
+    box-shadow: 0px 2px 8px#fd7d14b1;
+}
+
+.Options-progress {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.Options-container {
+    display: flex;
+    padding-left: 126px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    width: 90%;
+    height: 350px;
+}
+
+.option-item1,
+.option-item2,
+.option-item3 {
+    flex: 1;
+    min-width: 0;
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    border: 2px solid transparent;
+    min-height: 220px;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+.card-radio {
+    display: none;
+}
+
+.Texto-opciones{
+    text-align: center;
+    top: 0;
+    padding-bottom: 40px;
+    font-size: 2rem;
+    font-family: 'Orbitron', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.option-item1:hover,
+.option-item2:hover,
+.option-item3:hover{
+    box-shadow: 0px 6px 10px#fd7e14;
+    border: 4px solid orange;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+#op1:checked ~ .Options-container .option-item1,
+#op2:checked ~ .Options-container .option-item2,
+#op3:checked ~ .Options-container .option-item3 {
+    border: 4px solid orange;
+    box-shadow: 0px 4px 8px orange;
+}
+
+.card-radio:checked + .option-item1,
+.card-radio:checked + .option-item2,
+.card-radio:checked + .option-item3 {
+    border: 4px solid orange;
+    box-shadow: 0px 4px 8px orange;
+}
+
+
+.step-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#374151;
+    font-size:20px;
+    font-family: 'Orbitron', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+}
+
+.progress-container{
+    position:relative;
+    width:70%;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.progress-container::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:4px;
+    background:#d1d5db;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+    border-radius:10px;
+    z-index:1;
+}
+
+.progress{
+    position:absolute;
+    height:4px;
+    width:33%;
+    background: linear-gradient(90deg, #ffc107, #fd7e14);
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+    border-radius:10px;
+    z-index:2;
+    transition:.4s;
+}
+
+.circle{
+    width:24px;
+    height:24px;
+    background:white;
+    border-radius:50%;
+    border:3px solid #d1d5db;
+    z-index:3;
+    position:relative;
+    transition:.3s;
+}
+
+.circle.active{
+    border-color:orange;
+}
+
+.circle.active::after{
+    content:"";
+    width:9px;
+    height:9px;
+    background: linear-gradient(90deg, #ffc107, #fd7e14);
+    border-radius:50%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+@media (max-width: 1024px) {
+    .Formulario {
+        margin: 30px;
+        height: auto;
+    }
+
+    .Options-container {
+        padding-left: 0;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .Opciones-items a {
+        padding: 15px 40px;
+        font-size: 1.1rem;
+    }
+
+    .Texto-opciones {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .Title {
+        flex-direction: column;
+        padding: 15px 0;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .Title h1 {
+        padding-left: 0;
+        font-size: 15px;
+    }
+
+    .Menu ul {
+        padding: 10px;
+        gap: 4px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Menu a {
+        padding: 6px 10px;
+        font-size: 11px;
+        white-space: nowrap;
+    }
+
+    .Formulario {
+        margin: 15px;
+        height: auto;
+        padding: 15px;
+    }
+
+    .progress-container {
+        width: 95%;
+    }
+
+    .step-title {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    .Texto-opciones {
+        font-size: 1.1rem;
+        padding-bottom: 15px;
+    }
+
+    .Options-container {
+        flex-direction: column;
+        padding-left: 0;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .option-item1,
+    .option-item2,
+    .option-item3 {
+        width: 100%;
+        min-height: auto;
+        padding: 20px;
+        flex: none;
+    }
+
+    .icon img {
+        width: 25%;
+        padding-bottom: 10px;
+    }
+
+    .msg-contenedor {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 10px 15px 10px;
+    }
+
+    .msg {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    .Opciones-items {
+        flex-direction: row;
+        gap: 15px;
+        padding-top: 20px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Opciones-items a {
+        width: auto;
+        padding: 12px 30px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .Title h1 {
+        font-size: 13px;
+    }
+
+    .Menu a {
+        padding: 6px 8px;
+        font-size: 10px;
+    }
+
+    .Formulario {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .Texto-opciones {
+        font-size: 1rem;
+    }
+
+    .step-title {
+        font-size: 12px;
+    }
+
+    .option-item1,
+    .option-item2,
+    .option-item3 {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .icon img {
+        width: 20%;
+    }
+
+    .Opciones-items a {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+    }
+}
+
+
