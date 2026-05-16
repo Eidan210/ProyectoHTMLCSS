@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+  background: var(--gradient-header);
+  background-attachment: fixed;
+  font-family: sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  animation: fadeUp 0.6s ease 0.2s both;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+
+.Title{
+    font-family: 'Orbitron', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 100%;
+    font-size: 20px;
+    z-index: 1000px;
+    backdrop-filter: blur(14px);
+    box-shadow: 0 10px 20px rgba(215, 215, 215, 0.2);
+}
+ 
+.Title h1{
+    padding-left: 30px;
+}
+ 
+.Menu ul{ 
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+    flex-direction: row;
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+ 
+.Menu a {
+    text-decoration: none;
+    justify-content: space-between;
+    color: var(--text-main);
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+ 
+.Sesion:hover,
+.Contacto:hover,
+.Acerca:hover,
+.Menu .Inicio:hover{
+    transform: translateY(-4px);
+    background: white;
+    border-radius: 10px;
+}
+ 
+.Menu a:hover{
+    transform: translateY(-4px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(90deg, #ffc107, #fd7e14);
+    border-radius: 20px;
+    color: white;
+}
+ 
+.Costos-titulos{
+    font-family: 'Orbitron', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 15px;
+    text-align: center;
+}
+.Costos-titulos h1{
+    padding: 25px;
+}
+
+.Opciones-items{
+    display: flex;
+    width: 100%;
+    padding-top: 40px;
+    text-align: center;
+    gap: 80px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    z-index: 1100px;
+}
+
+.Opciones-items a {
+    font-family: 'Orbitron', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(90deg, #ffc107, #fd7e14);
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border: none;
+    width: 25%;
+    border-radius: 15px;
+    padding: 15px 120px;
+}
+
+.button-Continuar:hover, .button-Anterior:hover, a:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    border-radius: 50px;
+}
+
+.barra{
+    background: #334155;
+    border-radius: 20px;
+    height: 45px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 8px;
+    margin-top: 20px;
+}
+ 
+.color-barra1{
+    width: 16%;
+    height: 100%;
+    background: linear-gradient(90deg, #EA580C, #FB923C);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+}
+.color-barra2{
+    width: 36%;
+    height: 100%;
+    background: linear-gradient(90deg, #EA580C, #FB923C);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+}
+.color-barra3{
+    width: 32%;
+    height: 100%;
+    background: linear-gradient(90deg, #EA580C, #FB923C);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+}
+.color-barra4{
+    width: 16%;
+    height: 100%;
+    background: linear-gradient(90deg, #EA580C, #FB923C);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+}
+.Progreso{
+    margin: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 16px;
+    flex-direction: row;
+    justify-content: center;
+    background: rgb(234, 234, 234);
+    box-shadow: 0px 2px 8px#fd7d14b1;
+}
+ 
+.card{
+    display: grid;
+    grid-template-columns: repeat(2);
+    background: linear-gradient(90deg, #0F172A, #1E293B);
+    height: 130px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+ 
+.card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0px 4px 8px #0F172A;
+}
+.Progreso h3{
+    font-family: 'Orbitron', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 15px;
+    text-align: left;
+    color: white;
+}
+.tabla{
+    margin: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    text-decoration: none;
+    padding: 16px;
+    padding-left: 40px;
+    flex-direction: row;
+    justify-content: center;
+    background: rgb(234, 234, 234);
+    box-shadow: 0px 2px 8px#fd7d14b1;
+}
+ 
+.tabla-costos {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 4px 16px rgba(0,0,0,0.06);
+    padding: 2rem 2.5rem 2.5rem;
+    width: 100%;
+    max-width: 95%;
+    margin: 20px auto;
+}
+ 
+.tabla-costos h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1a202c;
+    margin-bottom: 1.25rem;
+}
+ 
+.tabla-costos table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+ 
+.tabla-costos thead tr {
+    background-color: #f8fafc;
+}
+ 
+.tabla-costos thead th {
+    text-align: left;
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+    color: #1a202c;
+    font-size: 0.85rem;
+    border: 1px solid #e2e8f0;
+}
+ 
+.tabla-costos tbody tr {
+    border: 1px solid #e2e8f0;
+    transition: background-color 0.15s ease;
+}
+ 
+.tabla-costos tbody tr:hover {
+    background-color: #f7fafc;
+}
+ 
+.tabla-costos tbody td {
+    padding: 0.8rem 1rem;
+    color: #1a202c;
+    border: 1px solid #e2e8f0;
+    vertical-align: middle;
+}
+ 
+.tabla-costos tbody td:first-child {
+    font-weight: 500;
+}
+ 
+.tabla-costos .footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+ 
+.tabla-costos .btn-download {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+ 
+.tabla-costos .btn-download:hover {
+    background-color: #1d4ed8;
+}
+ 
+.tabla-costos .copyright {
+    padding-top: 30px;
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    color: #718096;
+}
+ 
+.tabla-costos .copyright a {
+    color: #2563eb;
+    text-decoration: none;
+}
+ 
+.tabla-costos .copyright a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+ 
+    .Title {
+        font-size: 16px;
+        flex-wrap: wrap;
+    }
+ 
+    .Title h1 {
+        padding: 15px 20px;
+    }
+ 
+    .Menu ul {
+        padding: 15px;
+        gap: 4px;
+        flex-wrap: wrap;
+    }
+ 
+    .Menu a {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+ 
+    .Costos-titulos h1 {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+ 
+    .Progreso {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 15px;
+    }
+ 
+    .Opciones-items {
+        gap: 30px;
+        padding-top: 30px;
+    }
+ 
+    .Opciones-items a {
+        font-size: 1.1rem;
+        padding: 12px 40px;
+        width: 35%;
+    }
+ 
+    .tabla-costos {
+        padding: 1.5rem;
+    }
+}
+ 
+@media (max-width: 600px) {
+ 
+    .Title {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 14px;
+    }
+ 
+    .Title h1 {
+        padding: 15px;
+        font-size: 1rem;
+    }
+ 
+    .Menu ul {
+        flex-wrap: wrap;
+        padding: 10px 15px;
+        gap: 2px;
+    }
+ 
+    .Menu a {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+ 
+    .Costos-titulos h1 {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+ 
+    .Progreso {
+        grid-template-columns: 1fr;
+        margin: 10px;
+        padding: 10px;
+    }
+ 
+    .card {
+        height: auto;
+        min-height: 110px;
+    }
+ 
+    .Progreso h3 {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+ 
+    .tabla-costos {
+        padding: 1rem;
+        max-width: 100%;
+        border-radius: 10px;
+        margin: 10px auto;
+    }
+ 
+    .tabla-costos h2 {
+        font-size: 1rem;
+    }
+ 
+    .tabla-costos table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+ 
+    .tabla-costos thead th,
+    .tabla-costos tbody td {
+        padding: 0.6rem 0.75rem;
+        font-size: 0.8rem;
+    }
+ 
+    .tabla-costos .footer {
+        justify-content: center;
+    }
+ 
+    .tabla-costos .btn-download {
+        width: 100%;
+        text-align: center;
+        padding: 0.7rem;
+        font-size: 0.85rem;
+    }
+ 
+    .Opciones-items {
+        flex-direction: row;
+        gap: 15px;
+        padding: 20px 15px;
+        justify-content: center;
+    }
+ 
+    .Opciones-items a {
+        width: 45%;
+        font-size: 0.85rem;
+        padding: 12px 10px;
+        border-radius: 15px;
+        text-align: center;
+    }
+}
